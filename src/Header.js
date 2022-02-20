@@ -8,6 +8,8 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 
+import { Link } from "react-router-dom";
+
 const pages = [
   {
     name: "About",
@@ -29,7 +31,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center 0 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/">
+            <Link to="/">
               <span className="font-serif text-2xl hover:text-red-400">
                 Michell Ohm
               </span>
@@ -40,7 +42,7 @@ export default function Header() {
                   Makeup Artist
                 </span>
               </span>
-            </a>
+            </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400">
@@ -50,12 +52,12 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 hover:underline hover:decoration-red-400 hover:decoration-2"
             >
               Biography + Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -93,9 +95,9 @@ export default function Header() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {pages.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
                       <item.icon
@@ -105,7 +107,7 @@ export default function Header() {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         {item.name}
                       </span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
