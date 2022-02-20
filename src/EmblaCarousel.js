@@ -37,12 +37,12 @@ const EmblaCarousel = ({ slides }) => {
   }, [embla, onSelect, onScroll]);
 
   return (
-    <>
+    <div>
       <div className="embla">
-        <div className="embla__viewport " ref={viewportRef}>
-          <div className="flex mx-10 embla__container ">
+        <div className="embla__viewport" ref={viewportRef}>
+          <div className="flex mx-10 ">
             {slides.map((index) => (
-              <div className="relative  min-w-max px-1" key={index}>
+              <div className="relative min-w-max px-1" key={index}>
                 <div>
                   <img src={mediaByIndex(index)} alt="A cool cat." />
                 </div>
@@ -59,7 +59,7 @@ const EmblaCarousel = ({ slides }) => {
           style={{ transform: `translateX(${scrollProgress}%)` }}
         />
       </div>
-    </>
+    </div>
   );
 };
 
