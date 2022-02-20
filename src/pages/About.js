@@ -47,7 +47,7 @@ export default function About() {
               Contact
             </p>
             <p className="hover:text-red-400 hover:underline">
-              <a href="">email@email.com</a>
+              <span>email@email.com</span>
             </p>
           </div>
         </div>
