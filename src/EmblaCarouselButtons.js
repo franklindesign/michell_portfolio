@@ -1,5 +1,3 @@
-import React from "react";
-
 export const PrevButton = ({ enabled, onClick }) => (
   <button
     className="embla__button embla__button--prev"

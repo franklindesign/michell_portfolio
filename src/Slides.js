@@ -1,4 +1,5 @@
 import EmblaCarousel from "./EmblaCarousel";
+import "./css/embla.css";
 
 const SLIDE_COUNT = 12;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
