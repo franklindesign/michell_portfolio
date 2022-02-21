@@ -1,13 +1,10 @@
 .embla {
   position: relative;
   background-color: #f7f7f7;
-  padding: 20px;
-  max-width: 100%;
 }
 
 .embla__viewport {
   overflow: hidden;
-  width: 100%;
 }
 
 .embla__viewport.is-draggable {
@@ -25,19 +22,27 @@
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  margin-left: -10px;
 }
 
 .embla__slide {
   position: relative;
-  min-width: 100%;
-  padding: 10px;
+  min-width: 100vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .embla__slide__inner {
   position: relative;
   overflow: hidden;
-  height: 750px;
+  height: 650px;
+}
+@media (min-width: 640px) {
+  .embla__slide__inner {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+  }
 }
 
 .embla__slide__img {
