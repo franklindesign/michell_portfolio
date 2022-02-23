@@ -7,7 +7,7 @@ export default function Work() {
       <div class="sm:hidden">
         <Slides></Slides>
       </div>
-      <div class=" invisible sm:visible">
+      <div class="hidden sm:block">
         <DesktopPhotoAlbum></DesktopPhotoAlbum>
       </div>
     </>
