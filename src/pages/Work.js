@@ -4,7 +4,7 @@ import DesktopPhotoAlbum from "../PhotoAlbum";
 export default function Work() {
   return (
     <>
-      <div class="sm:hidden">
+      <div class="sm:hidden mb-4">
         <Slides></Slides>
       </div>
       <div class="hidden sm:block">
