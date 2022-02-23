@@ -11,6 +11,7 @@
     "embla-carousel-react": "^6.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-photo-album": "^1.7.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "vanilla-lazyload": "^17.6.0",
